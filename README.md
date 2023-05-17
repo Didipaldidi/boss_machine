@@ -29,6 +29,10 @@ Once you have the project downloaded, you'll need to run some terminal commands 
   - GET /api/minions/:minionId to get a single minion by id.
   - PUT /api/minions/:minionId to update a single minion by id.
   - DELETE /api/minions/:minionId to delete a single minion by id.
+  - GET /api/minions/:minionId/work to get an array of all work for the specified minon.
+  - POST /api/minions/:minionId/work to create a new work object and save it to the database.
+  - PUT /api/minions/:minionId/work/:workId to update a single work by id.
+  - DELETE /api/minions/:minionId/work/:workId to delete a single work by id.
 - `/api/ideas`
   - GET /api/ideas to get an array of all ideas.
   - POST /api/ideas to create a new idea and save it to the database.
@@ -104,7 +108,7 @@ In order to fully implement these routes, the database helper functions may not 
 
 ## Testing
 
-A testing suite has been provided for you, checking for all essential functionality and
+A testing suite has been provided, checking for all essential functionality and
 edge cases.
 
 To run these tests, first open the root project directory in your terminal. Then run `npm install` to install all necessary testing dependencies (you will only need to do this step once).
