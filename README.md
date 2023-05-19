@@ -1,4 +1,4 @@
-# Boss Machine
+## Boss Machine
 
 ## Project Overview
 
